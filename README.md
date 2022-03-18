@@ -1,0 +1,2 @@
+# LinkNvim
+neovim configuration
