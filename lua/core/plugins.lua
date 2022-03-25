@@ -18,6 +18,22 @@ local packer_install_plugins = {
     {"BurntSushi/ripgrep", event = {"BufRead", "BufNewFile"}},
     -- file lookup
     {"sharkdp/fd", event = {"BufRead", "BufNewFile"}}
+    -- chinese documentation
+    {"yianwillis/vimcdoc", event = {"BufRead", "BufNewFile"}},
+    ---------------
+    ---- theme ----
+    ---------------
+    -- catppuccin
+    {"catppuccin/nvim", as = "catppuccin", disable = false, load_file = true},
+    -- syntax highighting
+    {"nvim-treesitter/nvim-treesitter", load_file = true, event = {"BufRead", "BufNewFile"}},
+    -- rainbow parenthess
+    {"p00f/nvim-ts-rainbow", event = {"BufRead", "BufNewFile"}},
+    -- provides contextual information for the status bar
+    {"SmiteshP/nvim-gps", requires = "nvim-treesitter"},
+    -- gitsigns
+    {"lewis6991/gitsigns.nvim", load_file = true, after = {"nvim-treesitter", "plenary.nvim"}},
+
 
 }
 
