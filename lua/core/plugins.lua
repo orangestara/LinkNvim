@@ -24,7 +24,7 @@ local packer_install_plugins = {
     ---- theme ----
     ---------------
     -- catppuccin
-    {"catppuccin/nvim", as = "catppuccin", disable = false, load_file = true},
+    {"catppuccin/nvim", as = "catppuccin", disable = false, load_file = true, after = "impatient.nvim"},
     -- syntax highighting
     {"nvim-treesitter/nvim-treesitter", load_file = true, event = {"BufRead", "BufNewFile"}},
     -- rainbow parenthess
@@ -32,7 +32,7 @@ local packer_install_plugins = {
     -- provides contextual information for the status bar
     {"SmiteshP/nvim-gps", requires = "nvim-treesitter"},
     -- gitsigns
-    {"lewis6991/gitsigns.nvim", load_file = true, after = {"nvim-treesitter", "plenary.nvim"}},
+    --{"lewis6991/gitsigns.nvim", load_file = true, after = {"nvim-treesitter", "plenary.nvim"}},
 
 
 }
