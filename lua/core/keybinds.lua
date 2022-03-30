@@ -18,8 +18,20 @@ vim.g.mapleader = " "
 
 mapping = {
     -- basic
+    {"n"}, "<Esc>", ":nohlsearch<cr>"},
     {"n", "<C-u>", "10k"},
-    {"n", "<C-d>", "10j"}
+    {"n", "<C-d>", "10j"},
+    {"n", "H", "^"},
+    {"n", "L", "$"},
+    {"n", "<M-k>", "<cmd>res +1<cr>"},
+    {"n", "<M-j>", "<cmd>res -1<cr>"},
+    {"n", "<M-h>", "<cmd>vertical res -1<cr>"},
+    {"n", "<M-l>", "<cmd>vertical res +1<cr>"},
+    {"i", "jj", "<Esc>"},
+    {"i", "<M-k>", "<Up>"},
+    {"i", "<M-j>", "<Down>"},
+    {"i", "<M-h>", "<Left>"},
+    {"i", "<M-l>", "<Right>"}
 }
 
 
